@@ -1,0 +1,242 @@
+.dashboard {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #9ab1f0;
+    padding: 2rem;
+    min-height: 100vh;
+  }
+  
+  /* Hero Section */
+  .dashboard-hero {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(to right, #3b82f6, #6366f1);
+    color: white;
+    border-radius: 16px;
+    margin-bottom: 3rem;
+  }
+  .dashboard-hero h1 {
+    font-size: 2.75rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  .dashboard-hero p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  .dashboard-hero button {
+    background-color: white;
+    color: #3b82f6;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .dashboard-hero button:hover {
+    background-color: #f3f4f6;
+  }
+  
+  /* Tabs Section */
+  .dashboard-tabs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .dashboard-tab {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: 2px solid transparent;
+  }
+  .dashboard-tab:hover {
+    transform: translateY(-5px);
+    border-color: #3b82f6;
+  }
+  .dashboard-tab h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  .dashboard-tab p {
+    font-size: 0.95rem;
+    color: #4b5563;
+  }
+  .dashboard-tab.active {
+    border-color: #3b82f6;
+    background-color: #eff6ff;
+  }
+  
+  /* Tab Content */
+  .dashboard-content {
+    padding: 2rem;
+    background-color: rgb(194, 187, 247);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  .chart-wrapper {
+    width: 100%;
+    max-width: 650px;
+    margin: 2rem auto;
+  }
+  
+  table {
+    margin-top: 2rem;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  thead {
+    background-color: #e5e7eb;
+  }
+  
+  th, td {
+    padding: 0.75rem;
+    border: 1px solid #e5e7eb;
+    text-align: center;
+  }
+  
+  tbody tr:hover {
+    background-color: #f9fafb;
+  }
+  .candidate-chart {
+    max-width: 400px;
+    margin: 2rem auto;
+  }
+  .probability-label {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  .sentiment-chart {
+    max-width: 1000px;
+    margin: 2rem auto;
+  }
+  .sentiment-verdict {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+        
+  .chart-container {
+    max-width: 650px;
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 60vw;
+  }
+  
+  /* National Summary Cards */
+.summary-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+.summary-card {
+  background-color: white;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 200px;
+}
+.summary-card h3 {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+.summary-card p {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #111827;
+}
+
+/* Quick Facts Section */
+.quick-facts {
+  margin-top: 3rem;
+  background: #e5e7eb;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.quick-facts h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.quick-facts ul {
+  list-style: none;
+  padding: 0;
+}
+.quick-facts li {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #9941a7;
+}
+
+
+.input-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 1rem auto;
+  flex-wrap: wrap;
+}
+.input-row input {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  width: 250px;
+}
+.input-row button {
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.input-row button:hover {
+  background-color: #2563eb;
+}
+
+
+.party-analytics h2 {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.analytics-table {
+  width: 100%;
+  margin-top: 2rem;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.analytics-table th,
+.analytics-table td {
+  border: 1px solid #e5e7eb;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.analytics-table th {
+  background-color: #f3f4f6;
+}
